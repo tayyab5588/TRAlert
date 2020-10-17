@@ -1,0 +1,16 @@
+PODS:
+  - TRAlert (0.1.0)
+
+DEPENDENCIES:
+  - TRAlert (from `../`)
+
+EXTERNAL SOURCES:
+  TRAlert:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TRAlert: ca6ea63176d33587bca7322ac78ef850ab4ff520
+
+PODFILE CHECKSUM: 4542ba1ca355924f488aa2bf1f146ba2e79c883c
+
+COCOAPODS: 1.8.4

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import TRAlert
+
 
 class ViewController: UIViewController {
 
@@ -20,5 +22,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func trAlertButton(_ sender: UIButton) {
+//        let cancelButton = TRAlertButton(title: "Cancel") { [weak self] in
+//            guard let _ = self else { return }
+//        }
+//        let okButton = TRAlertButton(title: "Ok") { [weak self] in
+//            guard let _ = self else { return }
+//        }
+//        Alert.show(title: "TRAlert", body: "Show message text", buttons: [okButton,cancelButton])
+//        return
+    }
 }
 

@@ -1,0 +1,6 @@
+framework module Pods_TRAlert_Tests {
+  umbrella header "Pods-TRAlert_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

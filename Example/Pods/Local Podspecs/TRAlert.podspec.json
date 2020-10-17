@@ -1,0 +1,22 @@
+{
+  "name": "TRAlert",
+  "version": "0.1.0",
+  "summary": "A short description of TRAlert.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/tayyab5588/TRAlert",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "tayyab5588": "t.raza5588@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/tayyab5588/TRAlert.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TRAlert/Classes/**/*"
+}
