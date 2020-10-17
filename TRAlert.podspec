@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'TRAlert'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of TRAlert.'
+  s.summary          = 'Help for show Alert in project.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  'This project help for show Alert on single button click. Just add pod and call function.'
                        DESC
 
   s.homepage         = 'https://github.com/tayyab5588/TRAlert'
@@ -30,7 +30,12 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '12.0'
 
-  s.source_files = 'TRAlert/Classes/**/*'
+  s.source_files = 'Classes/**/*.swift'
+  
+  s.swift_version = '5.0'
+  s.platforms = {
+      "ios": "13.7"
+  }
   
   # s.resource_bundles = {
   #   'TRAlert' => ['TRAlert/Assets/*.png']
