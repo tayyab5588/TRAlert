@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TRAlert_Example' do
+  pod 'TRAlert', :path => '../'
+
+  target 'TRAlert_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
