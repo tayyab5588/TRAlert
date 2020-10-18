@@ -8,14 +8,14 @@
 
 import UIKit
 
-struct TRAlertButton {
-    var title: String!;
-    var action: (() -> Swift.Void)? = nil;
+public struct TRAlertButton {
+    public  var title: String!;
+    public var action: (() -> Swift.Void)? = nil;
 }
 
 public class TRAlertViewController: UIViewController {
-
-     static func load(from controller: UIViewController, title: String, message: String, buttons: [TRAlertButton]?) -> TRAlertViewController {
+    
+    static func load(from controller: UIViewController, title: String, message: String, buttons: [TRAlertButton]?) -> TRAlertViewController {
         
         let storyboard = UIStoryboard(name: "TRAlert", bundle: .main)
         let alertVC = storyboard.instantiateViewController(withIdentifier: "TRAlertViewController") as! TRAlertViewController
@@ -43,20 +43,19 @@ public class TRAlertViewController: UIViewController {
     @IBOutlet var button2: UIButton!
     @IBOutlet var parentView: UIView!
     @IBOutlet weak var backgroundView: UIView!
-    @IBOutlet weak var firstButtonStack: UIStackView!
-    @IBOutlet weak var secondButtonStack: UIStackView!
     
-    var alertTitle = String()
-    var alertBody = String()
-    var actionButtonTwoTitle = String()
-    var buttons = [TRAlertButton]()
-  public override func viewDidLoad() {
+    
+    public var alertTitle = String()
+    public  var alertBody = String()
+    public  var actionButtonTwoTitle = String()
+    public  var buttons = [TRAlertButton]()
+    public override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setupView()
     }
     
-   public func setupView() {
+    public func setupView() {
         
         self.heading.text = alertTitle
         self.message.text = alertBody
@@ -84,8 +83,8 @@ public class TRAlertViewController: UIViewController {
 }
 
 extension UIViewController {
-  public  class func topViewController(_ base: UIViewController? = UIApplication.shared.windows.first!.rootViewController) -> UIViewController? {
-
+    public  class func topViewController(_ base: UIViewController? = UIApplication.shared.windows.first!.rootViewController) -> UIViewController? {
+        
         if let nav = base as? UINavigationController {
             return topViewController(nav.visibleViewController)
         }

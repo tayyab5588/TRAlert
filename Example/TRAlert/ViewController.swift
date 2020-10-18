@@ -29,7 +29,7 @@ class ViewController: UIViewController {
 //        let okButton = TRAlertButton(title: "Ok") { [weak self] in
 //            guard let _ = self else { return }
 //        }
-//        Alert.show(title: "TRAlert", body: "Show message text", buttons: [okButton,cancelButton])
+        Alert.show(title: "TRAlert", body: "Show message text", buttons: [])
 //        return
     }
 }
