@@ -35,6 +35,18 @@ public class TRAlertViewController: UIViewController {
         return alertVC
     }
     
+    static func loadDesign(from controller: UIViewController, viewColor: UIColor,buttonTextColor: UIColor,buttonColor: UIColor, font:UIFont ) -> TRAlertViewController {
+        
+        let storyboard = UIStoryboard(name: "TRAlert", bundle: .main)
+        let alertVC = storyboard.instantiateViewController(withIdentifier: "TRAlertViewController") as! TRAlertViewController
+        alertVC.font = font
+        alertVC.viewColor = viewColor
+        alertVC.buttonTextColor = buttonTextColor
+        alertVC.buttonColor = buttonColor
+        
+        return alertVC
+    }
+    
     // Mark:- IBOutlet
     
     @IBOutlet var heading: UILabel!
@@ -46,9 +58,13 @@ public class TRAlertViewController: UIViewController {
     
     
     public var alertTitle = String()
-    public  var alertBody = String()
-    public  var actionButtonTwoTitle = String()
-    public  var buttons = [TRAlertButton]()
+    public var alertBody = String()
+    public var actionButtonTwoTitle = String()
+    public var buttons = [TRAlertButton]()
+    public var viewColor : UIColor?
+    public var buttonColor : UIColor?
+    public var buttonTextColor : UIColor?
+    public var font : UIFont?
     public override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -59,6 +75,12 @@ public class TRAlertViewController: UIViewController {
         
         self.heading.text = alertTitle
         self.message.text = alertBody
+        
+        self.button1.backgroundColor = buttonColor
+        self.button1.tintColor = buttonTextColor
+        self.button2.tintColor = buttonTextColor
+        self.parentView.backgroundColor = viewColor
+        self.backgroundView.backgroundColor = viewColor
         
         button1.setTitle(buttons[0].title, for: .normal)
         if buttons.count == 2 {
