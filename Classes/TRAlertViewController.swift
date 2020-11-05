@@ -77,8 +77,8 @@ public class TRAlertViewController: UIViewController {
         self.message.text = alertBody
         
         self.button1.backgroundColor = buttonColor
-        self.button1.tintColor = buttonTextColor
-        self.button2.tintColor = buttonTextColor
+        self.button2.setTitleColor(buttonTextColor, for: .normal)
+        self.button1.setTitleColor(buttonTextColor, for: .normal)
         self.parentView.backgroundColor = viewColor
         self.backgroundView.backgroundColor = viewColor
         
