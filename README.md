@@ -1,8 +1,6 @@
 # TRAlert
 
-![Single](https://user-images.githubusercontent.com/50027618/98242099-c15ed700-1f8d-11eb-9306-f19d106297d5.png)
-
-![TextColor](https://user-images.githubusercontent.com/50027618/98242102-c2900400-1f8d-11eb-969b-654ff576a31c.png)
+![Single](https://user-images.githubusercontent.com/50027618/98242099-c15ed700-1f8d-11eb-9306-f19d106297d5.png).  ![TextColor](https://user-images.githubusercontent.com/50027618/98242102-c2900400-1f8d-11eb-969b-654ff576a31c.png)
 
 ![ColorChange](https://user-images.githubusercontent.com/50027618/98242103-c3c13100-1f8d-11eb-851a-b145cf43af3e.png)
 
