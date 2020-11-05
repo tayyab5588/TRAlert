@@ -1,9 +1,13 @@
 # TRAlert
 
-![Single](https://user-images.githubusercontent.com/50027618/98241688-1f3eef00-1f8d-11eb-97a5-d4f745736f5f.png)
-![Double](https://user-images.githubusercontent.com/50027618/98241694-20701c00-1f8d-11eb-8bcf-f11889426bbc.png)
-![ColorChange](https://user-images.githubusercontent.com/50027618/98241696-2239df80-1f8d-11eb-9870-a4cfd8446ff4.png)
-![TextColor](https://user-images.githubusercontent.com/50027618/98241700-236b0c80-1f8d-11eb-9398-5086a89e1685.png)
+![Single](https://user-images.githubusercontent.com/50027618/98242099-c15ed700-1f8d-11eb-9306-f19d106297d5.png)
+
+![TextColor](https://user-images.githubusercontent.com/50027618/98242102-c2900400-1f8d-11eb-969b-654ff576a31c.png)
+
+![ColorChange](https://user-images.githubusercontent.com/50027618/98242103-c3c13100-1f8d-11eb-851a-b145cf43af3e.png)
+
+![Double](https://user-images.githubusercontent.com/50027618/98242106-c459c780-1f8d-11eb-8022-20bb64557b7d.png)
+
 
 [![CI Status](https://img.shields.io/travis/tayyab5588/TRAlert.svg?style=flat)](https://travis-ci.org/tayyab5588/TRAlert)
 [![Version](https://img.shields.io/cocoapods/v/TRAlert.svg?style=flat)](https://cocoapods.org/pods/TRAlert)
