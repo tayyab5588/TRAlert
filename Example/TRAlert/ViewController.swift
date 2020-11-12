@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import TRAlert
+//import TRAlert
 
 
 class ViewController: UIViewController {
@@ -23,14 +23,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func trAlertButton(_ sender: UIButton) {
-        let cancelButton = TRAlertButton(title: "Cancel") { [weak self] in
-            guard let _ = self else { return }
-        }
-        let okButton = TRAlertButton(title: "Ok") { [weak self] in
-            guard let _ = self else { return }
-        }
-        Alert.show(title: "TRAlert", body: "Show message text", buttons: [okButton,cancelButton])
-        Alert.designAlert(viewColor: .brown, buttonTextColor: .black, buttonColor: .green, font: .systemFont(ofSize: 12))
+        
+//        let cancelButton = TRAlertButton(title: "Cancel") { [weak self] in
+//            guard let _ = self else { return }
+//        }
+//        let okButton = TRAlertButton(title: "Ok") { [weak self] in
+//            guard let _ = self else { return }
+//        }
+//        Alert.show(title: "TRAlert", body: "Show message text", buttons: [okButton,cancelButton])
+//        Alert.designAlert(viewColor: .brown, buttonTextColor: .black, buttonColor: .green, font: .systemFont(ofSize: 12))
 //        return
     }
 }

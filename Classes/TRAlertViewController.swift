@@ -13,7 +13,7 @@ public struct TRAlertButton {
     public var action: (() -> Swift.Void)? = nil;
 }
 
-public class TRAlertViewController: UIViewController {
+open class TRAlertViewController: UIViewController {
     
     static func load(from controller: UIViewController, title: String, message: String, buttons: [TRAlertButton]?) -> TRAlertViewController {
         
@@ -57,21 +57,21 @@ public class TRAlertViewController: UIViewController {
     @IBOutlet weak var backgroundView: UIView!
     
     
-    public var alertTitle = String()
-    public var alertBody = String()
-    public var actionButtonTwoTitle = String()
-    public var buttons = [TRAlertButton]()
-    public var viewColor : UIColor?
-    public var buttonColor : UIColor?
-    public var buttonTextColor : UIColor?
-    public var font : UIFont?
-    public override func viewDidLoad() {
+    open var alertTitle = String()
+    open var alertBody = String()
+    open var actionButtonTwoTitle = String()
+    open var buttons = [TRAlertButton]()
+    open var viewColor : UIColor?
+    open var buttonColor : UIColor?
+    open var buttonTextColor : UIColor?
+    open var font : UIFont?
+     override open func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setupView()
     }
     
-    public func setupView() {
+    private func setupView() {
         
         self.heading.text = alertTitle
         self.message.text = alertBody
