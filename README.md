@@ -1,19 +1,29 @@
 # TRAlert
-
 <p align="center">
-<img src="https://user-images.githubusercontent.com/50027618/98242099-c15ed700-1f8d-11eb-9306-f19d106297d5.png" width="230" height="170" /> &nbsp; <img src="https://user-images.githubusercontent.com/50027618/98242102-c2900400-1f8d-11eb-969b-654ff576a31c.png" width="230" height="170" /> &nbsp;
-<img src="https://user-images.githubusercontent.com/50027618/98242103-c3c13100-1f8d-11eb-851a-b145cf43af3e.png" width="230" height="170" /> &nbsp;
-<img src="https://user-images.githubusercontent.com/50027618/98242106-c459c780-1f8d-11eb-8022-20bb64557b7d.png" width="230" height="170" /> &nbsp;
-</a>
+<img src="https://user-images.githubusercontent.com/50027618/99060908-91818600-25c2-11eb-8a81-afbe4e855c73.png" width="400" height="300" /> &nbsp; <img
 </p>
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/50027618/99058563-38642300-25bf-11eb-9402-006ab56bb0a1.gif" width="180" height="350" /> &nbsp/>
+<img src="https://user-images.githubusercontent.com/50027618/99060515-f8eb0600-25c1-11eb-9513-b590313136c1.gif" width="180" height="350" /> &nbsp/>
+<img src="https://user-images.githubusercontent.com/50027618/99060626-1ddf7900-25c2-11eb-8670-d3930012ac59.gif" width="180" height="350" /> &nbsp/>
 
-
+</p>
 
 [![CI Status](https://img.shields.io/travis/tayyab5588/TRAlert.svg?style=flat)](https://travis-ci.org/tayyab5588/TRAlert)
 [![Version](https://img.shields.io/cocoapods/v/TRAlert.svg?style=flat)](https://cocoapods.org/pods/TRAlert)
 [![License](https://img.shields.io/cocoapods/l/TRAlert.svg?style=flat)](https://cocoapods.org/pods/TRAlert)
 [![Platform](https://img.shields.io/cocoapods/p/TRAlert.svg?style=flat)](https://cocoapods.org/pods/TRAlert)
+
+
+
+
+## Change Color Of Background UIView,UIButton and UIText 
+---
+
+```swift
+Alert.designAlert(viewColor: .brown, buttonTextColor: .black, buttonColor: .green, font: .systemFont(ofSize: 12))
+```
 
 ## Example
 
@@ -54,14 +64,14 @@ $ pod install
 
 ```swift
 
-//        let cancelButton = TRAlertButton(title: "Cancel") { [weak self] in
-//            guard let _ = self else { return }
-//        }
-//        let okButton = TRAlertButton(title: "Ok") { [weak self] in
-//            guard let _ = self else { return }
-//        }
-//        Alert.show(title: "TRAlert", body: "Show message text", buttons: [okButton,cancelButton])
-//        Alert.designAlert(viewColor: .brown, buttonTextColor: .black, buttonColor: .green, font: .systemFont(ofSize: 12))
+let cancelButton = TRAlertButton(title: "Cancel") { [weak self] in
+guard let _ = self else { return }
+}
+let okButton = TRAlertButton(title: "Ok") { [weak self] in
+guard let _ = self else { return }
+}
+Alert.show(title: "TRAlert", body: "Show message text", buttons: [okButton,cancelButton])
+Alert.designAlert(viewColor: .brown, buttonTextColor: .black, buttonColor: .green, font: .systemFont(ofSize: 12))
 
 
 
