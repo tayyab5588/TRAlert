@@ -4,9 +4,10 @@
 </p>
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/50027618/99058563-38642300-25bf-11eb-9402-006ab56bb0a1.gif" width="180" height="350" /> &nbsp/>
-<img src="https://user-images.githubusercontent.com/50027618/99060515-f8eb0600-25c1-11eb-9513-b590313136c1.gif" width="180" height="350" /> &nbsp/>
-<img src="https://user-images.githubusercontent.com/50027618/99060626-1ddf7900-25c2-11eb-8670-d3930012ac59.gif" width="180" height="350" /> &nbsp/>
+<img src="https://user-images.githubusercontent.com/50027618/99058563-38642300-25bf-11eb-9402-006ab56bb0a1.gif"  width="180" height="350"/> &nbsp; 
+<img src="https://user-images.githubusercontent.com/50027618/99060515-f8eb0600-25c1-11eb-9513-b590313136c1.gif"  width="180" height="350"/> &nbsp; 
+<img src="https://user-images.githubusercontent.com/50027618/99060626-1ddf7900-25c2-11eb-8670-d3930012ac59.gif"  width="180" height="350">
+
 
 </p>
 
