@@ -9,7 +9,7 @@
 import UIKit
 
 public struct TRAlertButton {
-    public  var title: String!;
+    public var title: String!;
     public var action: (() -> Swift.Void)? = nil;
 }
 
@@ -21,6 +21,8 @@ open class TRAlertViewController: UIViewController {
         let alertVC = storyboard.instantiateViewController(withIdentifier: "TRAlertViewController") as! TRAlertViewController
         alertVC.alertTitle = title
         alertVC.alertBody = message
+        alertVC.buttonColor = TRAlertConfigs.buttonBGColor
+        alertVC.backgroundView.backgroundColor = TRAlertConfigs.viewBGColor
         if let alertButtons = buttons {
             alertVC.buttons = alertButtons
         }
@@ -35,17 +37,7 @@ open class TRAlertViewController: UIViewController {
         return alertVC
     }
     
-    static func loadDesign(from controller: UIViewController, viewColor: UIColor,buttonTextColor: UIColor,buttonColor: UIColor, font:UIFont ) -> TRAlertViewController {
-        
-        let storyboard = UIStoryboard(name: "TRAlert", bundle: .main)
-        let alertVC = storyboard.instantiateViewController(withIdentifier: "TRAlertViewController") as! TRAlertViewController
-        alertVC.font = font
-        alertVC.viewColor = viewColor
-        alertVC.buttonTextColor = buttonTextColor
-        alertVC.buttonColor = buttonColor
-        
-        return alertVC
-    }
+
     
     // Mark:- IBOutlet
     

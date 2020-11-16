@@ -8,7 +8,15 @@
 
 import UIKit
 
-let Alert = TRAlert.shared
+public class TRAlertConfigs {
+    
+    static let buttonBGColor = UIColor.black
+    static let viewBGColor = UIColor.white
+    static let font = UIFont(name: "ProximaNova-Regular", size: 17.0)
+    
+}
+
+public let Alert = TRAlert.shared
 
 public class TRAlert {
     
@@ -20,9 +28,5 @@ public class TRAlert {
         return TRAlertViewController.load(from: topViewController, title: title, message: body, buttons: buttons)
     }
     
-    func designAlert(viewColor: UIColor,buttonTextColor: UIColor,buttonColor: UIColor, font:UIFont) -> TRAlertViewController?  {
-        guard let topViewController = UIViewController.topViewController() else { return nil }
-        return TRAlertViewController.loadDesign(from: topViewController, viewColor: viewColor, buttonTextColor: buttonTextColor,buttonColor: buttonColor, font:font )
-    }
     
 }

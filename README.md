@@ -72,20 +72,19 @@ let okButton = TRAlertButton(title: "Ok") { [weak self] in
 guard let _ = self else { return }
 }
 Alert.show(title: "TRAlert", body: "Show message text", buttons: [okButton,cancelButton])
-Alert.designAlert(viewColor: .brown, buttonTextColor: .black, buttonColor: .green, font: .systemFont(ofSize: 12))
+
 
 
 
 
 ```
 
-- All done! Run the code and see the magic.
 
 
 ## Features
 ---
 
-- [x] Implementation with code & storyboard
+- [x] Implementation with  storyboard
 - [x] Custome UIView, UIButton and Text Color
 - [x] Custome UItext Font
 
