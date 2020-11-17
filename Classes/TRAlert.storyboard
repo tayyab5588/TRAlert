@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,6 +11,7 @@
         <!--Alert View Controller-->
         <scene sceneID="9G1-WX-Iez">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kJr-cv-DO2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="TRAlertViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="7Ck-eD-NkJ" customClass="TRAlertViewController" customModule="TRAlert" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tjo-9R-HoK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -136,7 +136,6 @@
                         <outlet property="parentView" destination="TB6-sY-i1Z" id="XUP-K0-4OH"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kJr-cv-DO2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="118.84057971014494" y="87.723214285714278"/>
         </scene>

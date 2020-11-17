@@ -11,24 +11,26 @@ import TRAlert
 
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     @IBAction func trAlertButton(_ sender: UIButton) {
         
         let cancelButton = TRAlertButton(title: "Cancel") { [weak self] in
-            guard let _ = self else { return }
+            guard let _ = self else { return}
+            
         }
         let okButton = TRAlertButton.init(title: "Ok") { [weak self] in
-            guard let _ = self else { return }
+            guard let _ = self else { return}
+            
         }
         Alert.show(title: "TRAlert", body: "Show message text", buttons: [okButton])
         return

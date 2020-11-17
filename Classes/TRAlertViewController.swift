@@ -9,8 +9,13 @@
 import UIKit
 
 public struct TRAlertButton {
-    public var title: String!;
-    public var action: (() -> Swift.Void)? = nil;
+    public var title: String!
+    public var action: (() -> Swift.Void)?
+    
+    public init(title: String, action: (() -> Swift.Void)?) {
+        self.title = title
+        self.action = action
+    }
 }
 
 open class TRAlertViewController: UIViewController {
