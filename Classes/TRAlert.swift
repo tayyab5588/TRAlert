@@ -8,19 +8,37 @@
 
 import UIKit
 
-public class TRAlertConfigs {
+public class TRAlertConfigs: NSObject {
     
-    static let buttonBGColor = UIColor.black
-    static let viewBGColor = UIColor.white
-    static let font = UIFont(name: "ProximaNova-Regular", size: 17.0)
+    public override init() {
+        super.init()
+    }
+    
+    public var buttonBGColor = UIColor.blue
+    public var viewBGColor = UIColor.cyan
+    public var buttonTextColor = UIColor.red
+    public var font = UIFont(name: "ProximaNova-Regular", size: 17.0)
+    
+    
+//
+//    public init(buttonBGColor: UIColor, viewBGColor: UIColor,buttonTextColor: UIColor, font: UIFont) {
+//        self.buttonBGColor = buttonBGColor
+//        self.viewBGColor = viewBGColor
+//        self.buttonTextColor = buttonTextColor
+//        self.font = font
+//       }
+    
     
 }
 
 public let Alert = TRAlert.shared
 
+
 public class TRAlert {
     
     static let shared = TRAlert()
+    
+    
     
     @discardableResult
     public func show(title: String, body: String, buttons: [TRAlertButton]?) -> TRAlertViewController? {

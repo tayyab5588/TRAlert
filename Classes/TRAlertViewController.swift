@@ -20,14 +20,15 @@ public struct TRAlertButton {
 
 open class TRAlertViewController: UIViewController {
     
-    static func load(from controller: UIViewController, title: String, message: String, buttons: [TRAlertButton]?) -> TRAlertViewController {
-        
-        let storyboard = UIStoryboard(name: "TRAlert", bundle: .main)
+    public static func load(from controller: UIViewController, title: String, message: String, buttons: [TRAlertButton]?) -> TRAlertViewController {
+        let storyboardBundle = Bundle(for: TRAlertViewController.self)
+        let storyboard = UIStoryboard(name: "TRAlert", bundle: storyboardBundle )
         let alertVC = storyboard.instantiateViewController(withIdentifier: "TRAlertViewController") as! TRAlertViewController
         alertVC.alertTitle = title
         alertVC.alertBody = message
         alertVC.buttonColor = TRAlertConfigs.buttonBGColor
-        alertVC.backgroundView.backgroundColor = TRAlertConfigs.viewBGColor
+        alertVC.buttonTextColor = TRAlertConfigs.buttonTextColor
+        alertVC.viewColor = TRAlertConfigs.viewBGColor
         if let alertButtons = buttons {
             alertVC.buttons = alertButtons
         }
@@ -42,7 +43,7 @@ open class TRAlertViewController: UIViewController {
         return alertVC
     }
     
-
+    
     
     // Mark:- IBOutlet
     
@@ -62,7 +63,7 @@ open class TRAlertViewController: UIViewController {
     open var buttonColor : UIColor?
     open var buttonTextColor : UIColor?
     open var font : UIFont?
-     override open func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setupView()
