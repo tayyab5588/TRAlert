@@ -29,6 +29,9 @@ open class TRAlertViewController: UIViewController {
         alertVC.buttonColor = TRAlertConfigs.buttonBGColor
         alertVC.buttonTextColor = TRAlertConfigs.buttonTextColor
         alertVC.viewColor = TRAlertConfigs.viewBGColor
+        alertVC.headingFont = TRAlertConfigs.headingFont
+        alertVC.messageFont = TRAlertConfigs.messageFont
+        
         if let alertButtons = buttons {
             alertVC.buttons = alertButtons
         }
@@ -62,7 +65,8 @@ open class TRAlertViewController: UIViewController {
     open var viewColor : UIColor?
     open var buttonColor : UIColor?
     open var buttonTextColor : UIColor?
-    open var font : UIFont?
+    open var headingFont : UIFont?
+    open var messageFont : UIFont?
     override open func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -79,6 +83,10 @@ open class TRAlertViewController: UIViewController {
         self.button1.setTitleColor(buttonTextColor, for: .normal)
         self.parentView.backgroundColor = viewColor
         self.backgroundView.backgroundColor = viewColor
+        self.heading.font = headingFont
+        self.message.font = messageFont
+        self.button1.titleLabel?.font = messageFont
+        self.button2.titleLabel?.font = messageFont
         
         button1.setTitle(buttons[0].title, for: .normal)
         if buttons.count == 2 {

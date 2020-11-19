@@ -8,26 +8,14 @@
 
 import UIKit
 
-public class TRAlertConfigs: NSObject {
+open class TRAlertConfigs {
     
-    public override init() {
-        super.init()
-    }
-    
-    public var buttonBGColor = UIColor.blue
-    public var viewBGColor = UIColor.cyan
-    public var buttonTextColor = UIColor.red
-    public var font = UIFont(name: "ProximaNova-Regular", size: 17.0)
-    
-    
-//
-//    public init(buttonBGColor: UIColor, viewBGColor: UIColor,buttonTextColor: UIColor, font: UIFont) {
-//        self.buttonBGColor = buttonBGColor
-//        self.viewBGColor = viewBGColor
-//        self.buttonTextColor = buttonTextColor
-//        self.font = font
-//       }
-    
+     static var buttonBGColor = UIColor.black
+     static var viewBGColor = UIColor.white
+     static var buttonTextColor = UIColor.white
+     static var headingFont = UIFont(name: "AmericanTypewriter-Bold", size: 18.0)
+     static var messageFont = UIFont(name: "AmericanTypewriter", size: 15.0)
+
     
 }
 
