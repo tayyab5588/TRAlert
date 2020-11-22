@@ -17,9 +17,11 @@
 [![Platform](https://img.shields.io/cocoapods/p/TRAlert.svg?style=flat)](https://cocoapods.org/pods/TRAlert)
 
 
-## Famous Apps Using FAPanels
---- StaryBarry
---- Inventory System
+##  Apps Using TRAlert
+---
+- StaryBarry 
+- Inventory System
+---
 
 
 ## Change Color Of Background UIView,UIButton and UIText 
