@@ -33,6 +33,7 @@ class ViewController: UIViewController {
             
         }
         Alert.show(title: "TRAlert", body: "Show message text", buttons: [okButton])
+        
         return
     }
 }

@@ -8,14 +8,15 @@
 
 import UIKit
 
-open class TRAlertConfigs {
+public class TRAlertConfigs {
     
-     static var buttonBGColor = UIColor.black
-     static var viewBGColor = UIColor.white
-     static var buttonTextColor = UIColor.white
-     static var headingFont = UIFont(name: "AmericanTypewriter-Bold", size: 18.0)
-     static var messageFont = UIFont(name: "AmericanTypewriter", size: 15.0)
-
+    
+    public static var buttonBGColor = UIColor.black
+    public static var viewBGColor = UIColor.white
+    public static var buttonTextColor = UIColor.white
+    public static var headingFont = UIFont(name: "AmericanTypewriter-Bold", size: 18.0)
+    public static var messageFont = UIFont(name: "AmericanTypewriter", size: 15.0)
+    
     
 }
 

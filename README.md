@@ -17,29 +17,49 @@
 [![Platform](https://img.shields.io/cocoapods/p/TRAlert.svg?style=flat)](https://cocoapods.org/pods/TRAlert)
 
 
+## Famous Apps Using FAPanels
+--- StaryBarry
+--- Inventory System
 
 
 ## Change Color Of Background UIView,UIButton and UIText 
 ---
 
 ```swift
-Alert.designAlert(viewColor: .brown, buttonTextColor: .black, buttonColor: .green, font: .systemFont(ofSize: 12))
+    static var buttonBGColor = UIColor.black
+    static var viewBGColor = UIColor.white
+    static var buttonTextColor = UIColor.white
+
 ```
+
+## Change Font of Title and Message
+```swift
+    static var headingFont = UIFont(name: "AmericanTypewriter-Bold", size: 18.0)
+    static var messageFont = UIFont(name: "AmericanTypewriter", size: 15.0)
+```
+
+## Support Version
+---
+
+- [x] XCode 11 support 
+- [x] Swift 5.0 support
+
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
 
 ## Installation
 
-TRAlert is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+### Cocoapods
 
-```ruby
-pod 'TRAlert'
+[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+
+```bash
+$ gem install cocoapods
 ```
+
 
 
 To integrate TRAlert into your Xcode project using CocoaPods, specify it in your `Podfile`:
@@ -65,16 +85,11 @@ $ pod install
 
 ```swift
 
-let cancelButton = TRAlertButton(title: "Cancel") { [weak self] in
-guard let _ = self else { return }
-}
-let okButton = TRAlertButton(title: "Ok") { [weak self] in
-guard let _ = self else { return }
-}
-Alert.show(title: "TRAlert", body: "Show message text", buttons: [okButton,cancelButton])
-
-
-
+   let okButton = TRAlertButton.init(title: "Ok") { [weak self] in
+       guard let _ = self else { return}
+   }
+   Alert.show(title: "TRAlert", body: "Show message text", buttons: [okButton])
+   return
 
 
 ```
@@ -91,7 +106,7 @@ Alert.show(title: "TRAlert", body: "Show message text", buttons: [okButton,cance
 
 ## Author
 
-tayyab5588, t.raza5588@gmail.com
+**tayyab5588** - (https://github.com/tayyab5588)
 
 ## License
 
