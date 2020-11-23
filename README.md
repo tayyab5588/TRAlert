@@ -4,11 +4,8 @@
 </p>
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/50027618/99058563-38642300-25bf-11eb-9402-006ab56bb0a1.gif"  width="180" height="350"/> &nbsp; 
-<img src="https://user-images.githubusercontent.com/50027618/99060515-f8eb0600-25c1-11eb-9513-b590313136c1.gif"  width="180" height="350"/> &nbsp; 
-<img src="https://user-images.githubusercontent.com/50027618/99060626-1ddf7900-25c2-11eb-8670-d3930012ac59.gif"  width="180" height="350">
-
-
+<img src="https://user-images.githubusercontent.com/50027618/99993798-fe262d00-2dd9-11eb-924f-0a3e3ec84503.jpeg"  width="180" height="350"/> &nbsp; 
+<img src="https://user-images.githubusercontent.com/50027618/99993899-1eee8280-2dda-11eb-8a55-208c7c2f1ba1.jpeg"  width="180" height="350"/> &nbsp; 
 </p>
 
 [![CI Status](https://img.shields.io/travis/tayyab5588/TRAlert.svg?style=flat)](https://travis-ci.org/tayyab5588/TRAlert)
