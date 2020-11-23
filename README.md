@@ -16,7 +16,7 @@
 
 ##  Apps Using TRAlert
 ---
-- StaryBarry 
+- StarBerry (https://apps.apple.com/us/app/starberry-video/id1522541817) 
 - Inventory System
 ---
 
